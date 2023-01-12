@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+.wrapper {
+	padding: 2em;
+	background-color: #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+.form-box {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 0;
+}
+
+.form-box label {
+	font-size: 1.2rem;
+}
+
+.form-box input {
+	margin: 0.3em 0;
+	padding: 0.3em 0.5em;
+	font-size: 1.2rem;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 5px;
+}
+
+.form-box.error input {
+	border: 1px solid rgb(0, 137, 250);
+	background-color: rgba(0, 137, 250, 0.1);
+}
+
+.form-box .error-text {
+	margin: 5px 0 0 10px;
+	font-size: 1rem;
+	color: rgb(0, 137, 250);
+	visibility: hidden;
+}
+
+.form-box.error .error-text {
+	visibility: visible;
+}
+
+.form-btns {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 2em;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 0 0.5em;
+	font-size: 1.2rem;
+	background-color: rgb(0, 140, 255);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: rgb(0, 107, 194);
+}
+
+.popup {
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em 4em;
+	background-color: #fff;
+	text-align: center;
+	border: 2px solid #000;
+	border-radius: 8px;
+	transition: top .5s;
+}
+
+.popup p {
+	margin-bottom: 1em;
+	font-size: 1.8rem;
+}
+
+.show-popup {
+	top: 150px;
+}
